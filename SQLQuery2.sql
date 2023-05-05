@@ -158,39 +158,3 @@ INSERT INTO patients VALUES(062,'Lance','Willy',40,1,'male',12.4,6.2,'B+ve','AB'
 INSERT INTO patients VALUES(091,'John','Dohn',20,3,'male',12.4,6.2,'B+ve','AB','0912334987','liveras@gmail.com','Cornflakes',2,'2012-04-12','0816754545','Sister',2,1,1,017,100,'Car');
 INSERT INTO patients VALUES(046,'Cornell','Curry',41,2,'female',12.4,6.2,'B+ve','AB','0912337654','moonas@gmail.com','Cornflakes',2,'2012-04-12','0816754545','Sister',2,1,1,017,100,'Fight');
 
-SELECT first_name, last_name
-FROM employees
-WHERE dept_id =100;
-
-
-SELECT employees.employee_id, employees.first_name, department.dept_name
-FROM employees
-JOIN department
-ON employees.employee_id =department.hod_id;
- 
- CREATE VIEW
- employee_id AS
- SELECT employee_id,last_name
- FROM employees
- WHERE employee_id >= 7;
-
- SELECT * FROM employee_id
- WHERE employee_id >=7;
-
- SELECT CONCAT(last_name, '  ', first_name) AS 'FULL_NAME'
- FROM employees
- ORDER BY last_name ASC;
-
- SELECT * FROM employees 
- WHERE first_name like '%w%';
-
- SELECT * FROM employees
- WHERE allergies = 'lime';
-
- SELECT * FROM employees
- WHERE first_name like '____b';
-
- SELECT COUNT (*) FROM employees
- WHERE status_id = 1;
-
- select * from marital_status
