@@ -66,8 +66,8 @@ CREATE TABLE patients(
     age INT, 
     status_id INT FOREIGN KEY REFERENCES marital_status,
     gender VARCHAR(10),
-    weight_ DECIMAL (10,1),
-    height DECIMAL (10,1),
+    weight_ DECIMAL (5,2),
+    height DECIMAL (5,1),
     blood_group VARCHAR(7),
     genotype VARCHAR(15),
     contact VARCHAR(11),
@@ -88,51 +88,34 @@ CREATE TABLE patients(
 
 
 --General Doctors
-INSERT INTO employees VALUES(01,'Cynthia','Morgan','female','2001-12-02','08189176543',1,'None',NULL,NULL);
-
-INSERT INTO department VALUES(100,'General Doctors',01);
+(INSERT INTO employees statement)
+(INSERT INTO department statement)
 
 UPDATE employees
-SET dept_id =100
-WHERE employee_id =01;
+SET dept_id =
+WHERE employee_id = ;
 
-INSERT INTO employees VALUES(02,'Adewuyi','African','male','1999-04-12','08115564380',1,'Peanuts',100,01);
-INSERT INTO employees VALUES(03,'Angel','Kitchens','female','1978-11-04','0705467820',1,'None',100,01);
-INSERT INTO employees VALUES(04,'Amanda','Cole','female','1970-01-01','08023478599',1,'Egg',100,01);
-INSERT INTO employees VALUES(011,'Caleb','Morris','male','1997-02-02','08026732409',1,'Lime',100,01);
-INSERT INTO employees VALUES(012,'Dannie','Johnson','female','2000-12-14','09143256088',4,'Nuts',100,01);
+(INSERT INTO employees statement)
 
 --Surgical
-INSERT INTO employees VALUES(06,'Cynthia','Germain','female','2001-04-20','09152540000',2,'None',NULL,NULL);
-
-INSERT INTO department VALUES(101,'Surgical',06);
+(INSERT INTO employees statement)
+(INSERT INTO department statement)
 
 UPDATE employees
-SET dept_id = 101
-WHERE employee_id =06;
+SET dept_id = 
+WHERE employee_id = ;
 
-INSERT INTO employees VALUES(07,'Jude','Oba','male','2001-06-25','08184045677',1,'None',101,06);
-INSERT INTO employees VALUES(08,'Morgan','Aiden','female','2000-06-13','07034567211',2,'Nuts',101,06);
-INSERT INTO employees VALUES(018,'Amanda','Crose','female','1978-11-10','09134222000',3,'Dust',101,06);
-INSERT INTO employees VALUES(019,'Albert','De-Rio','male','1998-08-04','08056678866',3,'Lime',101,06);
-INSERT INTO employees VALUES(020,'Osas','Abraham','male','1994-10-18','08113200900',2,'Nuts',101,06);
+(INSERT INTO employees statement)
 
 --Para-Medics
-INSERT INTO employees VALUES(09,'Amaka','George','female','2000-11-29','09142425942',2,'None',NULL,NULL);
-
-INSERT INTO department VALUES(102, 'Para-Medics',09);
+(INSERT INTO employees statement)
+(INSERT INTO department statement)
 
 UPDATE employees
-SET dept_id = 102
-WHERE employee_id =09;
+SET dept_id = 
+WHERE employee_id = ;
 
-INSERT INTO employees VALUES(010,'Cyril','Johnson','male','1999-05-23','08189323564',2,'None',102,09);
-INSERT INTO employees VALUES(013,'Sabrella','Monet','female','1978-12-25','09023075092',1,'None',102,09);
-INSERT INTO employees VALUES(014,'Ini','Obong','male','1997-07-24','08142375644',1,'None',102,09);
-INSERT INTO employees VALUES(015,'Adam','Kabir','male','1971-10-21','08167856433',1,'None',102,09);
-INSERT INTO employees VALUES(016,'Joshua','Colt','male','1972-11-01','09045678901',1,'Lemons',102,09);
-INSERT INTO employees VALUES(017,'Ajayi','Crowther','male','2000-05-23','08192927864',1,'None',102,09);
-
+(INSERT INTO employees statement)
 
 INSERT INTO marital_status VALUES(1,'Married');
 INSERT INTO marital_status VALUES(2,'Single');
@@ -153,8 +136,4 @@ INSERT INTO re_occurence_status VALUES(3,'Often');
 INSERT INTO patient_category VALUES(1,'In-Patient');
 INSERT INTO patient_category VALUES(2,'Out-Patient');
 
-INSERT INTO patients VALUES(015,'Jake','Wright',33,2,'male',12.4,6.2,'B+ve','AB','0912330000','longas@gmail.com','Corn',2,'2012-04-12','0816754545','Sister',2,1,1,017,100,'Accident');
-INSERT INTO patients VALUES(062,'Lance','Willy',40,1,'male',12.4,6.2,'B+ve','AB','0912765438','mangoas@gmail.com','Air',2,'2012-04-12','0816754545','Sister',2,1,1,017,100,'Shot');
-INSERT INTO patients VALUES(091,'John','Dohn',20,3,'male',12.4,6.2,'B+ve','AB','0912334987','liveras@gmail.com','Cornflakes',2,'2012-04-12','0816754545','Sister',2,1,1,017,100,'Car');
-INSERT INTO patients VALUES(046,'Cornell','Curry',41,2,'female',12.4,6.2,'B+ve','AB','0912337654','moonas@gmail.com','Cornflakes',2,'2012-04-12','0816754545','Sister',2,1,1,017,100,'Fight');
 
